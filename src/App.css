@@ -1,16 +1,22 @@
 .App {
+  position: relative;
+  min-height: 83vh;
+  margin-bottom: 0 !important;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand-text {
+  font-family: cursive;
+  font-size: 1.5em;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section.notFound,
+section.about,
+section.todos, 
+section.categories,
+section.login {
+  min-height: 80vh;
 }
 
 .App-header {
@@ -35,4 +41,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footerContainer {
+  width: 100%;
+  background-color: #282c34;
 }
